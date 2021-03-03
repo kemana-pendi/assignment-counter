@@ -9,9 +9,9 @@ class App extends Component {
   };
 
   handleAdd = () => {
-    let counters = [...this.state.counters];
-    let index = counters.length;
-    index++;
+    const counters = [...this.state.counters];
+    const index =
+      counters.length === 0 ? 1 : counters[counters.length - 1].id + 1;
     counters[counters.length] = { ...{ id: index, value: 0 } };
     this.setState({ counters });
   };
