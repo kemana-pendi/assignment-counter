@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class NavBar extends Component {
   render() {
-    const { onAdd, counters } = this.props;
+    const { onAdd } = this.props;
     return (
       <nav className="navbar navbar-light bg-light">
         <div className="container">
